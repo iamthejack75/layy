@@ -1,0 +1,221 @@
+/* =================== */
+/* BASIC */
+/* =================== */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+/* =================== */
+/* REUSABLE COMPOMENTS */
+/* =================== */
+h1, h2{
+    color: #28377e;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+h2::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 56px;
+    margin-bottom: 8px;
+    background: #f15a28;
+}
+p{
+    color: #b1b0b1;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* =================== */
+/* HEADER SECTION */
+/* =================== */
+.container{
+    width: 77%;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.nav{
+    width: 60%;
+}
+.nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav ul li{
+    margin-left: 32px;
+}
+.nav ul li a{
+    font-size: 15px;
+    color: #204f87;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* =================== */
+/* BANNER SECTION */
+/* =================== */
+.banner-section{
+    background-image: url(../css/images/banner.png);
+    height: 440px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    width: 471px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%); 
+}
+.content h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+/* Keyframes */
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 20px;}
+  }
+  .errow{
+    position: relative;
+    text-align: center;
+    animation: mymove 7s infinite;
+  }
+  .errow i{
+      color: #ffffff;
+      margin-top: 360px;
+  }
+
+  /* =================== */
+/* WHO WE ARE SECTION */
+/* =================== */
+.who-we-are-section{
+    width: 77%;
+    margin: auto;
+    display: flex;
+}
+.who-we-are-content{
+    margin-top: 160px;
+    float: left;
+    position: relative;
+}
+.who-we-are-content h2{}
+.who-we-are-content h2::after{
+}
+.who-we-are-content p{
+    margin: 24px 0;
+    width: 77%;
+}
+.who-we-are-image{
+    width: 50%;
+    
+    float: right;
+}
+.who-we-are-image img{
+    margin-top: 100px;
+    height: 77%;
+}
+
+/* =================== */
+/* WHO WE DO COMPOMENTS */
+/* =================== */
+.who-we-do-section{
+    background: #f7f8f8;
+    margin-top: 80px;
+    position: relative;
+}
+.heading{
+    text-align: center;
+}
+.heading h2::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 52px;
+    margin-left: 740px;
+    background: #f15a28;
+}
+
+.images{
+    display: flex;
+    margin-top: 200px;
+    background-image: url(../css/images/what-we-do-bg.png);
+    height: 400px;
+    background-position: right;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+/* first img */
+.first-images{
+    margin-left: 300px;
+}
+.first-images img{
+    height: 80%;
+}
+.first-images h3{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: -170px;
+    margin-left: 95px;
+}
+.first-images i{
+    color: #ffffff;
+    margin-top: 68px;
+    margin-left: 120px;
+}
+
+/* middle img */
+.second-images{}
+.second-images img{
+    height: 80%;
+}
+.second-images h3{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 197px;
+    margin-top: -172px;
+    margin-left: 23px;
+}
+.second-images i{
+    color: #ffffff;
+    margin-top: 44px;
+    margin-left: 113px;
+}
+
+/* last img */
+.third-images{}
+.third-images img{
+    height: 80%;
+}
+.third-images h3{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 132px;
+    margin-top: -172px;
+    margin-left: 67px;
+}
+.third-images i{
+    color: #ffffff;
+    margin-left: 115px;
+    margin-top: 48px;
+}
